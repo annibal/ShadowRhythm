@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Shadow Rhythm</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			p {
+			margin:1px 0;}
+			body {
+				text-align:center;
+				font-family:Calibri, Helvetica, Ubuntu, sans-serif;
+				margin:0;
+				background:black;
+				color:white;
+			}
+			#helper {
+				padding:15px;
+				margin-left:-15px;
+				margin-right:-15px;
+			}
+			section {
+				padding-bottom:200px;
+			}
+			container {
+				padding-top:20%;
+				display:block;
+				margin:0px 15%;
+				background:url('images/Menu/Menu.png');
+				background-size:100% auto;
+				background-repeat:no-repeat;
+			}
+			button {
+				padding:20px 40px;
+				display:block;
+				margin:10px auto;
+				width:30%;
+				font-size:20pt;
+				cursor:pointer;
+			}
+			h2 {
+				font-size:60pt;
+			}
+			a {
+				text-decoration:none;
+			}
+			a:hover {
+				text-decoration:underline;
+				
+			}
+			li {
+				font-size:14pt;
+			}
+			#langue {
+				position:absolute;
+				top:5px;
+				right:5px;
+			}
+			#langue img {
+			display:block;
+			margin:5px;}
+			#tut-tut img {
+				width:100%;
+				margin-bottom:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<audio id='cache' style="display:none;"><source src='musiquinha.mp3' /></audio>
+		
+		<div id="langue">
+			<a href="index-br.html"><img src="images/BRFLAG.png" width="64"/ height="48" alt="PT-BR"></a>
+			<a href="index-us.html"><img src="images/EUFLAG.png" width="64"/ height="48" alt="EUA-US"/></a>
+		</div>
+		<container>
+			<a href="game.html"><button>Jogar</button></a>
+			<a href="#how-to"><button>Instruções</button></a>
+			<a href="#helper"><button>Combos</button></a>
+			<div style="padding:300px;"></div>
+			<section>
+				<p>
+				Shadow Rhythm é um jogo do estilo Rítmico-Tower Defense.</p><p>
+				Ao som do concerto de Klaus, no mesmo ritmo, você deve realizar seus rituais por meio dos direcionais para executar suas ações. As invocações dependem de mana, nisso, deve-se consegui-las primeiro. Quando houver mana o suficiente, poderá invocar monstros. Cada um deles possui atributos e características diferentes para contribuir com estratégias contra seus inimigos. Sobreviva na base do ritmo + estratégia e retire-os do cemitério!
+				</p>
+				<br /><br /><audio id='musicPlayer' autoplay controls><source src='musica_menu.mp3' /></audio>
+				<script> document.getElementById("musicPlayer").loop = true; </script>
+			</section>
+			<div id="how-to" style="padding:10px;"></div>
+			<h2>Como Jogar</h2>
+			<div style="margin:0px auto; width:55%; text-align:left; min-width:450px; padding:0 20px;">
+			<ol>
+				<li>Ouça a música<br /><img src="images/img_menu1.jpg" /></li>
+				<li>Junte suas energias<br /><img src="images/img_menu2.jpg" /></li>
+				<li>Faça o ritual (servos ficam em espera)<br /><img src="images/img_menu3.jpg" /></li>
+				<li>Invoque seus servos (clicando na lane)<br /><img src="images/img_menu4.jpg" /></li>
+				<li>Sobreviva<br /><img src="images/img_menu5.jpg" /></li>
+			</ol>
+			<div style="padding:40px;"></div>
+			<div id="tut-tut">
+				<img src="images/TUT/tut1.png" />
+				<img src="images/TUT/tut2.png" />
+				<img src="images/TUT/tut3.png" />
+				<img src="images/TUT/tut4.png" />
+				<img src="images/TUT/tut5.png" />
+				<img src="images/TUT/tut6.png" />
+				<img src="images/TUT/tut7.png" />
+				<img src="images/TUT/tut8.png" />
+				<img src="images/TUT/tut9.png" />
+				<p style="text-align:right;" >
+					<a href="game.html">Jogar</a> | <a href="index-br.html">Menu</a>
+				</p>
+			</div>
+			<div style="padding:40px;"></div>
+			<div id="helper" style="background:#222;">
+		<h2>Unidades</h2>
+		<div>
+			<h4 style="margin:2px;">Mana <img src="images/lightning.png" style="width:30px; height:30px; margin:2px;"></h4>
+			<br>
+			<div class="img-container">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+			</div>
+		</div>
+		<hr>
+		<div>
+			<br>
+			<img src="images/Guerreiro.png" width="100" height="100"/>
+			<img src="images/icon0001.png" width="50" height="50"/>
+			<h4 style="margin:2px;">Guerreiro (ATK : 20,  RNG : 1,  ASP : 2,  HP : 50,  DEF : 10)</h4>
+			<div class="img-container2" style="float:right;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+			</div>
+			<div class="img-container">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+			</div>
+		</div>
+		<div>
+			<br>
+			<img src="images/Mago.png" width="100" height="100"/>
+			<img src="images/icon0002.png" width="50" height="50"/>
+			<h4 style="margin:2px;">Mago (ATK : 50,  RNG : 3,  ASP : 1,  HP : 30,  DEF : 0)</h4>
+			<div class="img-container2" style="float:right;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+			</div>
+			<div class="img-container">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+			</div>
+		</div>
+		<div>
+			<br>
+			<img src="images/Arqueiro.png" width="100" height="100"/>
+			<img src="images/icon0003.png" width="50" height="50"/>
+			<h4 style="margin:2px;">Arqueiro (ATK : 7,  RNG : 5,  ASP : 2,  HP : 30,  DEF : 0)</h4>
+			<div class="img-container2" style="float:right;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+			</div>
+			<div class="img-container">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;">
+			</div>
+		</div>
+		<div>
+			<br>
+			<img src="images/Escudeiro.png" width="100" height="100"/>
+			<img src="images/icon0004.png" width="50" height="50"/>
+			<h4 style="margin:2px;">Guarda (ATK : 10,  RNG : 1,  ASP : 1,  HP : 120,  DEF : 60)</h4>
+			<div class="img-container2" style="float:right;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+			</div>
+			<div class="img-container">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+			</div>
+			<p>Quando o guarda recebe algum dano, ele fica fixo no seu lugar e recupera sua vida.</p>
+		</div>
+		<div>
+			<br>
+			<img src="images/Escudeiro.png" width="100" height="100"/>
+			<img src="images/icon0005.png" width="50" height="50"/>
+			<h4 style="margin:2px;">Escudeiro (ATK : 0,  RNG : 0,  ASP : Infinity,  HP : 50,  DEF : 90)</h4>
+			<div class="img-container2" style="float:right;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+			</div>
+			<div class="img-container">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+			</div>
+			<p>O escudeiro não ataca, mas (as vezes) fica na frente de uma unidade amiga recuperando sua vida e a protegendo.</p>
+		</div>
+		<div>
+			<br>
+			<img src="images/Kamikaze.png" width="100" height="100"/>
+			<img src="images/icon0006.png" width="50" height="50"/>
+			<h4 style="margin:2px;">Kamikaze (ATK : 1000,  RNG : 1,  ASP : Infinity,  HP : 40,  DEF : 100)</h4>
+			<div class="img-container2" style="float:right;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+			</div>
+			<div class="img-container">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+			</div>
+			<p>O kamikaze vai correndo na sua lane e explode, dando dano massivo em área.</p>
+		</div>
+		<div>
+			<br>
+			<img src="images/Buraco_negro.png" width="100" height="100"/>
+			<img src="images/icon0007.png" width="50" height="50"/>
+			<h4 style="margin:2px;">Buraco Negro (ATK : 0,  RNG : 0,  ASP : Infinity,  HP : 10,  DEF : 100)</h4>
+			<div class="img-container2" style="float:right;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+			</div>
+			<div class="img-container">
+				<img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+			</div>
+			<p>O buraco negro aparece em um lugar aleatório na lane escolhida, espera um pouco e então mata todos em volta.</p>
+		</div>
+		<div>
+			<br>
+			<img src="images/Ceifador.png" width="100" height="100"/>
+			<img src="images/icon0008.png" width="50" height="50"/>
+			<h4 style="margin:2px;">Ceifador (ATK : 60,  RNG : 2,  ASP : 6,  HP : 60,  DEF : 50)</h4>
+			<div class="img-container2" style="float:right;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+			</div>
+			<div class="img-container">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+			</div>
+		</div>
+		<div>
+			<br>
+			<img src="images/Sombra.png" width="100" height="100" style="background:white;"/>
+			<img src="images/icon0009.png" width="50" height="50" style="background:white;"/>
+			<h4 style="margin:2px;">Sombra (ATK : 0.8,  RNG : 1,  ASP : 20,  HP : 10,  DEF : 20)</h4>
+			<div class="img-container2" style="float:right;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+				<img src="images/lightning.png" style="width:30px; height:30px; margin:2px;">
+			</div>
+			<div class="img-container">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+				<img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;">
+			</div>
+			<p>A sombra aparece em um lugar aleatório e fica fixa dando dano nos inimigos que passarem por ela. Apenas o inimigo com uma tocha pode atingir a sombra.</p>
+		</div>
+		<div>
+			<br>
+			<img src="images/Bombardeiro.png" width="100" height="100"/>
+			<img src="images/icon0010.png" width="50" height="50"/>
+			<h4 style="margin:2px;">Bombardeiro (ATK : 10,  RNG : 3,  ASP : 1,  HP : 80,  DEF : 20)</h4>
+			<div class="img-container2" style="float:right;"><img src="images/lightning.png" style="width:30px; height:30px; margin:2px;"><img src="images/lightning.png" style="width:30px; height:30px; margin:2px;"><img src="images/lightning.png" style="width:30px; height:30px; margin:2px;"><img src="images/lightning.png" style="width:30px; height:30px; margin:2px;"></div>
+			<div class="img-container"><img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;"><img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;"><img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;"><img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;"><img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;"><img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;"><img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;"><img src="images/seta_R.png" style="width:35px; height:35px; margin:2px;"></div>
+			<p>O bombardeiro vai lentamente na sua lane, e dá dano tanto na sua lane quanto nas lanes acima e abaixo.</p>
+		</div>
+		<div>
+			<br>
+			<img src="images/Zumbi.png" width="100" height="100"/>
+			<img src="images/icon0011.png" width="50" height="50"/>
+			<h4 style="margin:2px;">Zumbi (ATK : 20,  RNG : 1,  ASP : 1,  HP : 100,  DEF : 35)</h4>
+			<div class="img-container2" style="float:right;"><img src="images/lightning.png" style="width:30px; height:30px; margin:2px;"><img src="images/lightning.png" style="width:30px; height:30px; margin:2px;"><img src="images/lightning.png" style="width:30px; height:30px; margin:2px;"></div>
+			<div class="img-container"><img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;"><img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;"><img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;"><img src="images/seta_D.png" style="width:35px; height:35px; margin:2px;"></div>
+			<p>Quando o zumbi mata um inimigo, ele vira outro zumbi.</p>
+		</div>
+	</div>
+				<p style="text-align:right;" >
+					<br />
+					<a href="game.html">Jogar</a> | <a href="index-br.html">Menu</a>
+				</p>
+
+			</div>
+			
+			<div style="padding:300px;"></div>
+		</container>
+	</body>
+</html>

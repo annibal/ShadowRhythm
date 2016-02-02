@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Shadow Rhythm</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<style>.h { display:none; }
+		body { margin:0; padding:0;}
+		.level-icon {
+			position:fixed;
+			display:block;
+			width:100%;
+			text-align:center;
+			top:40%;
+		}
+		.one-third {
+			width:33%;
+			height:33%;
+			text-align:center;
+			position:relative;
+			box-sizing:border-box;
+			float:left;
+		}
+		.one-third button {
+			width:100%;
+			height:100%;
+		}
+		
+		.mobile-controls {
+			display:none;
+		}
+		.gameContainer {
+			width:99.5vw;
+			height:70vw;
+			max-height:99.5vh;
+			max-width:142vh;
+			box-sizing:border-box;
+		}
+		@media (max-width:768px) {
+			.mobile-controls {
+				opacity:.5;
+				display:block;
+				position:fixed;
+				bottom:0px;
+				left:0px;
+				width:170px;
+				height:170px;
+			}
+		}
+		
+		</style>
+	</head>
+	<body>
+		<!-- Div e Canvas -->
+		<div class="gameContainer" >
+			<canvas id="canv" style="width:100%; height:100%;" class="noselect"></canvas>
+		</div>
+		<div id="helper" class="h" style="position:absolute; top:20px; background:rgba(255,255,255,0.8); width:60%; right:20px; border:1px solid #000;">
+			<div>
+				<h4><a href="index.html" ><button style=" padding:10px 20px; margin-left:5px;">MENU</button></a></h4>
+				<h4 style="margin:2px;">Mana <img src="images/lightning.png" style="width:30px; height:30px; margin:2px;"></h4>
+				<br>
+				<div class="img-container">
+					<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+					<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+					<img src="images/seta_U.png" style="width:35px; height:35px; margin:2px;">
+					<img src="images/seta_L.png" style="width:35px; height:35px; margin:2px;">
+				</div>
+			</div>
+			<hr />
+		</div>
+		
+		<div class="level-icon">
+			<img class="h" id="lvimg1" src="images/LevelIcon/Level1img.png" alt="Level 1" />
+			<img class="h" id="lvimg2" src="images/LevelIcon/Level2img.png" alt="Level 2" />
+			<img class="h" id="lvimg3" src="images/LevelIcon/Level3img.png" alt="Level 3" />
+			<img class="h" id="lvimg4" src="images/LevelIcon/Level4img.png" alt="Level 4" />
+			<img class="h" id="lvimg5" src="images/LevelIcon/Level5img.png" alt="Level 5" />
+			<img class="h" id="lvimg6" src="images/LevelIcon/Level6img.png" alt="Level 6" />
+			<img class="h" id="lvimg7" src="images/LevelIcon/Level7img.png" alt="Level 7" />
+		</div>
+		
+		<div class="mobile-controls">
+			<div class="one-third"> </div>
+			<div class="one-third"><button id="up" onclick="obj.key_up();">A</button></div>
+			<div class="one-third"> </div>
+			
+			<div class="one-third"> <button id="up" onclick="obj.key_left();"><</button></div>
+			<div class="one-third"></div>
+			<div class="one-third"> <button id="up" onclick="obj.key_right();">></button></div>
+			
+			<div class="one-third"> </div>
+			<div class="one-third"><button id="up" onclick="obj.key_down();">V</button></div>
+			<div class="one-third"> </div>
+		</div>
+		
+		<button id="pause" style="position:fixed; bottom:22px; right:23px; padding:10px 20px;" onclick="obj.togglePause(); $('#helper').toggleClass('h')" >PAUSE</button>
+		
+		<script src="js/jquery.min.js" ></script>
+		<script src="js/utils.js" ></script>
+		<script src="js/unidades.js" ></script><!-- dados das unidades: deve vir ANTES de canvazator pra carregar as imgs -->
+		
+		<!-- Framework e Objeto Padrão -->
+		<script src="js/canvazator.js" ></script>
+		
+		<!-- "Classes" -->
+		<script src="js/objeto.js" ></script>
+		<script src="js/efeito.js" ></script>
+		<script src="js/unit.js" ></script>
+		<script src="js/unidade_inimiga.js" ></script>
+		<script src="js/enemy.js" ></script>
+		
+		<!-- Script de início -->
+		<script src="js/jogo.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+Shadow Rhythm
+
+Shadow Rhythm é um jogo do estilo Rítmico-Tower Defense.
+Ao som do concerto de Klaus, no mesmo ritmo, você deve realizar seus rituais por meio dos direcionais para executar suas ações. As invocações dependem de mana, nisso, deve-se consegui-las primeiro. Quando houver mana o suficiente, poderá invocar monstros. Cada um deles possui atributos e características diferentes para contribuir com estratégias contra seus inimigos. Sobreviva na base do ritmo + estratégia e retire-os do cemitério!
+
+Shadow Rhythm is a game of Rhythm-Tower Defense style.
+The sound Klaus concert, at the same rate, they must perform their rituals through directional to perform their actions. The invocations depend on mana, this one should get them first. When there is enough mana, you can summon monsters. Each has different characteristics and attributes to contribute to strategies against their enemies. Survive on the basis of rhythm + strategy and remove them from the cemetery!
