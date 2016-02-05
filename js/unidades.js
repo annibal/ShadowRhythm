@@ -474,7 +474,7 @@ var Enemies = [
 			speed:.4,
 			def:99,
 			mana:4,
-			level:7,
+			level:6,
 			effect:function() {
 				return false;
 			}
