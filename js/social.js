@@ -56,7 +56,7 @@ socialContainer.innerHTML = (
 	"    <img src='images/gamedev.png'  alt='Game Dev' width='40' height='40' style='display:inline; float:left; margin:5px;;'/>"+
 	"    <img src='images/code.png'  alt='Programmer' width='40' height='40' style='display:inline; float:left; margin:5px;;'/>"+
 	"    <a href='"+
-		"https://www.facebook.com/geovane.medina"+
+		"https://www.facebook.com/GeeoMedina"+
 	"' title='' target='_blank' rel='nofollow'><img src='images/facebook.png' alt='Facebook' width='40' height='40' style='display:inline; float:right;'/></a>\r\n"+
 	"    <a href='"+
 		"https://www.linkedin.com/in/geeomedina"+
@@ -69,7 +69,7 @@ socialContainer.innerHTML = (
 	// ----------------
 	
 	"<p style='margin:0px; text-align:left; font:normal small-caps bold 16pt Montserrat,Helvetica,sans-serif;'>"+
-		"Luiz Felipe Nepomuceno da Silva"+
+		"Luiz Felipe da Silva"+
 	"</p>\r\n"+
 	"<p style='margin:0px; margin-bottom:5px; text-align:left; text-transform:lowercase; opacity:.7; font:normal small-caps lighter 14pt Montserrat,Helvetica,sans-serif;'>"+
 		"Sound Effects"+
@@ -81,7 +81,7 @@ socialContainer.innerHTML = (
 		"https://www.facebook.com/LuizBlading"+
 	"' title='' target='_blank' rel='nofollow'><img src='images/facebook.png' alt='Facebook' width='40' height='40' style='display:inline; float:right;'/></a>\r\n"+
 	"    <a href='"+
-		"https://www.linkedin.com/in/luiznepo"+
+		"https://www.linkedin.com/in/luiz-felipe-da-silva-7812b5120/"+
 	"' title='' target='_blank' rel='nofollow'><img src='images/linkedin.png' alt='Linkedin' width='40' height='40' style='display:inline; float:right;'/></a>\r\n"+
 	"</p>\r\n"+
 	
